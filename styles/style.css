@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap");
+
+/* Mobile first design strategy */
+@media screen and (min-width: 60em) {
+  header {
+    display: flex;
+  }
+
+  .header-texts {
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .photos-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body content */
+
+/* Element Selector */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 0.6rem;
+  color: #2f5e05;
+  line-height: 3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+/* Class Selector */
+.header-img {
+  text-align: center;
+}
+
+/* Descendant Combinator Selector */
+header img {
+  width: 40%;
+  min-width: 250px;
+  max-width: 400px;
+  border-radius: 1rem;
+  border: 2px solid #2f5e05;
+}
+
+header a {
+  color: #0dad00;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+/* My Projects */
+
+#project1,
+#project2,
+#project3 {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #2f5e05;
+}
+
+#project1:hover,
+#project2:hover,
+#project3:hover {
+  filter: drop-shadow(16px 16px 20px black);
+}
+
+/* Photos */
+
+/* ID Selector */
+#photo1,
+#photo2,
+#photo3 {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #2f5e05;
+}
+
+footer {
+  background-color: #d7f4be;
+  text-align: center;
+  padding: 3rem;
+}
+
+footer li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2f5e05;
+}
+
+/* Pseudo Element Selector */
+footer a:hover {
+  background-color: #ffffff;
+}
